@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: La unica
+Author: Estefania Hormigo
+Url: http://www.fontsquirrel.com/fonts/la-unica
+
+Font: Antipasto
+Author: Zetafonts
+Url: https://www.fontsquirrel.com/fonts/antipasto

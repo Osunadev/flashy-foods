@@ -1,0 +1,118 @@
+body {
+	/* Hacer que el background fit the screen con trucos chinos */
+	background: linear-gradient(to right, #33cccc 0%, #336699 100%) no-repeat
+		center center fixed;
+	-webkit-background-size: cover; /* chrome */
+	-moz-background-size: cover; /* firefox */
+	-o-background-size: cover; /* opera */
+	background-size: cover; /* mi teoria apunta a que es para el Explorer*/
+}
+
+.div-panel {
+	background-image: url(Wallpaper.png);
+	background-size: cover;
+	background-color: white;
+
+	/*Centrando el div*/
+	width: 80rem;
+	height: 40rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(
+		-50%,
+		-50%
+	); /*Posicionar el div en medio de la pantalla*/
+
+	/*Los bordes*/
+	border-radius: 2.5rem;
+
+	/*Shadow*/
+	box-shadow: 14px 20px 22px 10px rgba(0, 0, 0, 0.2),
+		0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div-menu {
+	/*La barra del menu*/
+	position: absolute;
+	margin-top: 4rem;
+	margin-left: 5.5rem;
+	width: 60%;
+}
+
+.div-lorem {
+	width: 29rem;
+	margin-left: 7rem;
+}
+
+/*Descaradamente pirateando botones de la interne*/
+.boton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color: #408c99;
+
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+
+	border-radius: 20px;
+	padding: 10px 10px 10px;
+	margin-top: 2rem;
+	margin-left: 0rem;
+	text-decoration: n one;
+	text-shadow: 0px 1px 0px #3d768a;
+}
+.boton:hover {
+	background: #45bbcf;
+	background-color: #45bbcf;
+}
+.boton:active {
+	position: relative;
+	top: 1px;
+}
+/* Fin del robo */
+
+img {
+	position: absolute;
+}
+
+a {
+	background-color: white;
+	margin: 1rem;
+	padding: 0.5rem;
+
+	/*Estilo*/
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-shadow: 0px 2px 4px #686868;
+}
+
+h1 {
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: left;
+	font-size: 60px;
+
+	color: black;
+	text-shadow: 2px 2px 4px #686868;
+
+	margin-top: 12rem;
+	margin-left: 7rem;
+}
+
+h2 {
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: left;
+	font-weight: normal;
+	font-size: 15px;
+}

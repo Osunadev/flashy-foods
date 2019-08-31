@@ -1,0 +1,16 @@
+REFERENCIAS:
+
+(Degradado en CSS)
+https://www.w3schools.com/colors/colors_gradient.asp
+
+(Centrar divs)
+https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/
+
+(Shadow)
+https://www.w3schools.com/css/css3_shadows.asp
+
+(Colores)
+https://www.quackit.com/css/css_color_codes.cfm
+
+(Generador de Botones)
+https://www.bestcssbuttongenerator.com/#/36
