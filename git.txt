@@ -1,0 +1,7 @@
+Working Dir: Para agregar jejeps archivos
+Staging Index: flotando hasta que se haga push
+Local Repo: Repositorio local en computadora
+
+Git Status
+Git Log
+Git Branch
