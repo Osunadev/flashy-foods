@@ -1,0 +1,165 @@
+@import "./app";
+$padding-content-pages: 30px 70px;
+
+@mixin panelProperties {
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: $container-menu-width + 400px;
+    height: auto;
+    margin: 70px auto;
+    color: black;
+}
+
+@mixin backgroundProperties {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin tagsProperties {
+    h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 0 0 30px 0;
+    }
+    
+    h3 {
+        font-weight: normal; 
+        font-family: 'Rambla', sans-serif; 
+        text-transform: uppercase; 
+        color: rgba(0, 0, 0, 0.38);
+        text-align: center;
+    }
+
+    h4 {
+        width: 40%;
+        font-weight: normal;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        width: 50%;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+        display: block;
+        border: none;
+        background-color: rgba(196, 196, 196, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: large;
+    }
+
+    .link {
+        width: auto;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .redireccion {
+        width: auto;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+    } 
+}
+
+.home {
+    background-image: url('../img/bgHome.png');
+    @include panelProperties;
+    @include backgroundProperties;
+    @include tagsProperties;
+    .content-home {
+        padding: $padding-content-pages;
+    }
+}
+
+.login {
+    background-image: url('../img/bgLogIn.png');
+    @include panelProperties;
+    @include backgroundProperties;
+    @include tagsProperties;
+    .content-login {
+        padding: $padding-content-pages;
+        h1 {text-align: center;}
+        h4, .link {text-align: center; margin: 2% auto; font-family: 'Nunito', sans-serif;}
+        .link {color: white;}
+        .redireccion {color: #FDD137;}
+        input {margin: 2% auto;}
+    }
+}
+
+.signup {
+    background-image: url('../img/bgSignUp.png');
+    @include panelProperties;
+    @include backgroundProperties;
+    @include tagsProperties;
+    .content-signup {
+        padding: $padding-content-pages;
+        h1 {text-align: center;}
+        h4, .link {text-align: center; margin: 0 auto;}
+        .link {color: white;}
+        .redireccion {color: #DBFF00;}
+        input {font-weight: normal; font-family: 'Rambla', sans-serif; text-transform: uppercase; color: rgba(0, 0, 0, 0.38); margin: 10px;}
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+.tarjeta {
+    @include panelProperties;
+    @include backgroundProperties;
+    @include tagsProperties;
+    .content-instrucciones {
+        padding: $padding-content-pages;
+        h1 {text-align: center;}
+        p {text-align: center; margin: 10px auto; width: 70%; font-size: large;}
+        .link {color: white;}
+    }
+
+    .content-resultado {
+        padding: $padding-content-pages;
+        @include backgroundProperties;
+        background-image: url('../img/resultado.svg');
+        background-size: 100px;
+        h1 {text-align: center; margin: 0 auto 200px auto}
+        p {text-align: center; margin: 10px auto; width: 70%; font-size: large;}
+        .link {color: white;}
+    }
+}
+
+.quiz {
+    @include panelProperties();
+    @include backgroundProperties;
+    @include tagsProperties();
+    .content-quiz {
+        padding: $padding-content-pages;
+        h4 {margin: 0 auto;}
+        h3 {font-size: x-large;}
+        .link {color: white;}
+        
+        .deck {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 60px auto auto auto;
+            justify-content: space-around;
+        }
+    }
+}

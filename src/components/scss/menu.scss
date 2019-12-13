@@ -1,0 +1,43 @@
+$width-div-menu: 120px;
+$height-div-menu: 60px;
+
+@mixin backgroundProperties() {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: ($width-div-menu - 70px);
+    background-position: center;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+
+    width: auto;
+    height: auto;
+
+    .home, .logIn, .signUp {
+        width: $width-div-menu;
+        height: $height-div-menu;
+        border-radius: 20px;
+        margin: 2%;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        @include backgroundProperties;
+
+        &:hover{
+            box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 10px 30px 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    .home{
+        background-image: url(../img/Home.svg);
+    }
+  
+    .logIn{
+        background-image: url(../img/LogIn.svg);
+    }
+    
+    .signUp{
+        background-image: url(../img/SignUp.svg);
+    }
+}

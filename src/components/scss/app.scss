@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:400,400i,600,600i,700,700i,800,800i,900,900i|Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=latin-ext');
+$bg-color: linear-gradient(334.09deg, #3377BB 10.39%, #53B8B8 76.88%);
+$container-menu-width: 600px;
+
+html {
+    width:  100vw; /* For 100% screen width */   
+    margin: 0; 
+    min-height: 100%;
+}
+
+body {
+    background-image: $bg-color;
+    margin: 0;
+}

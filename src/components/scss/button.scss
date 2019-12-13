@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Rambla&display=swap');
+@mixin backgroundProperties() {
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+@mixin borderProperties {
+    border-radius: 50px;
+    border: none;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@mixin flexProperties {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin standardButton {
+    width: 200px;
+    height: 50px;
+    margin: 40px auto;
+    @include borderProperties;
+
+    .link {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: x-large;
+    }
+    
+    &:hover {
+        width: 30%;
+        letter-spacing: 10px;
+        background: #EFEFEF;
+    } 
+}
+
+.play {
+    @include flexProperties;
+    width: 100px;
+    height: 70px;
+    margin: 50px 0 0 50px;
+    
+    @include backgroundProperties;
+    background-image: url('../img/Play.svg');
+    background-color: #EFC530;
+    @include borderProperties;
+
+    &:hover {
+        border-radius: 50px;
+        width: 30%;
+        background-color: rgb(202, 202, 202);
+    }
+}
+
+.entrar {
+    @include flexProperties;
+    @include standardButton;
+    @include borderProperties;
+    background-color: rgb(202, 202, 202);
+
+    &:hover {
+        background-color: rgb(239, 93, 48);
+    }
+}
+
+.registrar {
+    @include flexProperties;
+    @include standardButton;
+    @include borderProperties;
+    background-color: rgb(202, 202, 202);
+
+    &:hover {
+        background-color: rgb(121, 180, 93);
+    }
+}
+
+.continuar {
+    @include flexProperties;
+    @include standardButton;
+    @include borderProperties;
+    background-color: rgb(202, 202, 202);
+
+    &:hover {
+        background-color: rgb(22, 214, 188);
+    }
+}
+
+.volver {
+    @include flexProperties;
+    @include borderProperties;
+    width: 70px;
+    height: 50px;
+    margin: 0;
+    
+    @include backgroundProperties;
+    background-image: url('../img/Volver.svg');
+    background-color: rgb(239, 48, 48);
+
+    &:hover {
+        border-radius: 10px;
+    }
+}
+
+.salir {
+    @include flexProperties;
+    @include borderProperties;
+    align-self: right;
+    width: 70px;
+    height: 50px;
+    margin: 0 0 0 auto;
+    
+    @include backgroundProperties;
+    background-image: url('../img/Salir.svg');
+    background-color: rgb(255, 19, 19);
+
+    &:hover {
+        border-radius: 10px;
+    }
+}

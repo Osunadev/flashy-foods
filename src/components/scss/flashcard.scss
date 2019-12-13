@@ -1,0 +1,42 @@
+$width-flashcard: 200px;
+$height-flashcard: 200px;
+@mixin flashcardProperties {
+    cursor: pointer;
+    width: $width-flashcard;
+    height: $height-flashcard;
+    border: none;
+    font-size: large;
+    color: #fff;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flashCard-container{
+    width: auto;
+    height: 300px;
+    
+    .flashCard-flipper{
+       transition: .8s cubic-bezier(.775, .07, .575, .995);
+       transform-style: preserve-3d;
+
+       &:hover{
+          transform: rotateX(180deg);
+    }
+}
+
+    .front-flashCard{
+        background-color: rgb(238, 238, 238);
+        @include flashcardProperties;
+        transform: rotateX(0deg);
+        position: absolute;
+        box-shadow: 0px 8px 12px rgb(134, 134, 134);
+    }
+
+    .back-flashCard{
+        background-color: rgb(0, 151, 211);
+        @include flashcardProperties;
+        transform: rotateX(-180deg);
+        position: relative;
+        box-shadow: 0px 8px 12px #ccc;
+    }
+ }
